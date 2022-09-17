@@ -959,3 +959,10 @@ text-decoration-line: underline;
 color: var(--white-text-color);
 background-color: var(--activity-color);
 }
+.modal-btn-close{
+  cursor: pointer;
+}
+.modal-btn-close:hover{
+  fill: var(--activity-color);
+  
+}
