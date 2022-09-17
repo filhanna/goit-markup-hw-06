@@ -559,10 +559,66 @@
             </li>
           </ul>
         </div>
+        <div class="newsletter">
+          <form action="#">
+            <p class="newsletter-text">Підпишіться на розсилку</p>
+            <label class="newsletter-label">
+              <input class="newsletter-input" type="email" name="user-email" placeholder="E-mail">
+            </label>
+            <button class="newsletter-button" type="submit">Підписатися
+            <svg class="newsletter-icon" width="24" height="24">
+              <use href="./image/icons.svg#telegram"></use>
+            </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal">  
+        <form class="register-form">
+          <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div role="group" class="register-form-group">
+            <label class="register-form-field">
+              <span class="register-form-label">Ім'я</span>
+              <input class="register-form-input" type="text" name="user-name" id="user-name">
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./image/icons.svg#name-modal"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-field">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="tel" name="user-phone" id="user-phone">
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./image/icons.svg#phone-modal"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-field">
+              <span class="register-form-label">Пошта</span>
+              <input class="register-form-input" type="email" name="user-mail" id="user-mail">
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./image/icons.svg#mail-modal"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-field">
+									<span class="register-form-label">Коментар</span>
+									<textarea class="register-form-message" name="user-comment" rows="5" placeholder="Введіть текст">
+									</textarea>
+								</label>
+          </div>
+          <label class="register-form-agreement">
+            <input class="register-form-checkbox" type="checkbox" name="" id="">
+            <span class="register-form-desc">
+              Погоджуюся з розсилкою та приймаю
+               <a class="register-form-link" href="">Умови договору</a>
+             </span>
+            
+          </label>
+          <button class="register-form-btn btn" type="submit">Відправити</button>
+        </form>
         <button class="modal-btn" type="button" data-modal-close>
           <svg width="18" height="18">
             <use href="./image/icons.svg#cross"></use>

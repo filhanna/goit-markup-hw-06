@@ -512,7 +512,61 @@ img {
   align-items: center;
   justify-content: center;
 }
-
+/* Footer HW6 */
+.newsletter{
+  display: block;
+  margin-left: auto;
+}
+.newsletter-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+}
+.newsletter-label {
+    display: inline-block;
+    margin-right: 12px;
+}
+.newsletter-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    background-color:  rgba(47, 48, 58, 1);
+    color: var(--secondary-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.newsletter-button {
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    border: none;
+    cursor: pointer;
+    background-color: var(--activity-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.newsletter-btn:hover, .newsletter-btn:focus {
+    background-color: var(--activity-color) ;
+}
+.newsletter-icon {
+    margin-left: 10px;
+    fill: var(--white-text-color);
+}
 /* CSS HW 2*/
 /* Кнопки*/
 
@@ -634,40 +688,6 @@ img {
   
 }
 
-  /* max-width: 100%;
-  height: 100%;
-  background-color: var(--activation-color-rgba90);
-  opacity: 0;
-
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
-}
-
-.cards-description {
-  font-size: 18px;
-  line-height: 1.56;
-  text-align: center;
-  color: var(--white-text-color);
-
-  padding: 63px 24px;
-}
-.portfolio-link:hover .overlay{
-  transform: translateY(0%);
-  opacity: 1;
-}
-.portfolio-link{
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */ 
-
 /* Іконки соціальних мереж тімейтів */
 
 .social {
@@ -748,11 +768,6 @@ img {
   width: 170px;
   height: 92px;
 
-  /* border-radius: 4px;
-  border: 1px solid var(--social-icon-color);
-  transition-property: border,fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .client-link {
   display: flex;
@@ -801,8 +816,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
   background-color: var(--primary-background-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
@@ -820,5 +836,174 @@ background-color: var(--primary-background-color);
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 align-items: center;
-
 }
+.register-form-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+form{
+  display: block;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.register-form-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 12px;
+}
+.register-form-group {
+    margin-bottom: 20px;
+}
+.register-form-field:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.register-form-field {
+    position: relative;
+    display: block;
+}
+.register-form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+}
+.register-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form-input:focus{
+  border-color: var(--activity-color);
+}
+/* .register-form-input:focus{
+  border-color: var(--activity-color);
+} */
+.register-form-icon {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    transform: translateY(-11px);
+}
+.register-form-input:focus + .register-form-icon {
+
+  fill:var(--activity-color);
+}
+
+.register-form-message {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    font-size: 12px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+}
+.register-form-message::placeholder{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+.register-form-desc{
+  font-size: 14px;
+line-height: 24px;
+letter-spacing: 1.7;
+
+color: var(--secondary-text-color);
+}
+.register-form-link{
+  color: var(--activity-color);
+  font-size: 14px;
+line-height: 24px;
+letter-spacing: 1.7;
+text-decoration-line: underline;
+}
+.register-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+.register-form-btn{
+  display: block;
+  margin: 0 auto;
+
+color: var(--white-text-color);
+background-color: var(--activity-color);
+}
+/* form{
+      display: block;
+    margin-top: 0em;
+}
+.form-modal {
+ /* display: block; */
+/* }
+.user-title {
+  display: inline-block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+.form-register{
+margin-bottom: 20px;
+}
+.form-field:not(:last-child){
+  
+  margin-bottom: 10px;
+}
+.form-field {
+  display: block;
+  position: relative;
+}
+.form-field input {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  height: 40px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid var(--primary-text-color);
+}
+
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+}
+.modal-icon{
+  position: absolute;
+ 
+} */ 
