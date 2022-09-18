@@ -987,3 +987,6 @@ background-color: var(--activity-color);
   background-image: url(../image/icons/on.svg);
 
 }
+.register-form-checkbox:checked + .custom-checkbox{
+border-color: var(--activity-color);
+}
