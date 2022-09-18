@@ -898,14 +898,13 @@ button, input, optgroup, select, textarea {
 .register-form-input:focus{
   border-color: var(--activity-color);
 }
-/* .register-form-input:focus{
-  border-color: var(--activity-color);
-} */
+
 .register-form-icon {
     position: absolute;
     bottom: 0;
     left: 15px;
     transform: translateY(-11px);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .register-form-input:focus + .register-form-icon {
 
@@ -965,4 +964,26 @@ background-color: var(--activity-color);
 .modal-btn-close:hover{
   fill: var(--activity-color);
   
+}
+.custom-checkbox{
+  width: 16px;
+  height: 15px;
+  background-image: url(../image/icons/off.svg);
+   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hide-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.register-form-checkbox:checked + .custom-checkbox{
+  background-image: url(../image/icons/on.svg);
+
 }
